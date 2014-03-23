@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
 	s.source			= { :git => 'https://github.com/jessesquires/MessagesTableViewController.git', :branch => 'version_5_release' }
 	s.platform			= :ios, '7.0'
 	s.source_files		= 'JSQMessagesViewController/**/*.{h,m}'
-	s.resources		= 'JSQMessagesViewController/Assets/**/*'
 	s.frameworks		= 'QuartzCore'
 	s.requires_arc		= true
+	s.resources = ['JSQMessagesViewController/Assets/**/*', 'JSQMessagesViewController/**/*.xib']
 
 	s.dependency 'JSQSystemSoundPlayer'
 	s.dependency 'DAKeyboardControl', '~> 2.0'
